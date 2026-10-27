@@ -1,105 +1,338 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#0b263b" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Wency & Clea | Wedding Invitation</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
   <main>
-    <section class="intro" id="intro" aria-label="Wedding invitation envelope">
+    <!-- ENVELOPE INTRO -->
+    <section class="intro" id="intro">
       <p class="eyebrow">A SPECIAL INVITATION</p>
-      <h1>Wency <span>&amp;</span> Clea</h1>
+      <h1>Wency <span>&</span> Clea</h1>
       <p class="intro-subtitle">request the pleasure of your company</p>
-      <div class="envelope-scene" id="envelopeScene">
+
+      <div class="envelope-scene">
         <div class="envelope-shadow"></div>
+
         <div class="letter-preview">
-          <p class="mini-script">Together with our families</p>
-          <p class="mini-names">WENCY <span>&amp;</span> CLEA</p>
-          <div class="mini-rule"></div>
-          <p class="mini-date">APRIL 00, 2027</p>
+          <p class="script">Together with our families</p>
+          <p class="preview-names">WENCY <span>&</span> CLEA</p>
+          <div class="rule"></div>
+          <p class="preview-date">APRIL 00, 2027</p>
         </div>
+
         <div class="envelope">
           <div class="envelope-back"></div>
           <div class="envelope-flap"></div>
-          <div class="envelope-front-left"></div>
-          <div class="envelope-front-right"></div>
-          <div class="envelope-front-bottom"></div>
-          <button class="wax-seal" id="openSeal" aria-label="Open the invitation" title="Click to open your invitation">
-            <span>W</span><i>&amp;</i><span>C</span>
+          <div class="envelope-left"></div>
+          <div class="envelope-right"></div>
+          <div class="envelope-bottom"></div>
+          <button class="wax-seal" id="openSeal"
+            aria-label="Open wedding invitation">
+            W <i>&</i> C
           </button>
         </div>
       </div>
-      <p class="open-hint" id="openHint">Click the wax seal to open your invitation</p>
-      <p class="intro-foot">NAVY • SLATE • SILVER</p>
+
+      <p id="openHint" class="open-hint">
+        Click the wax seal to open your invitation
+      </p>
+      <p class="palette-label">NAVY · DUSTY BLUE · SILVER · CHARCOAL</p>
     </section>
 
-    <section class="invitation hidden" id="invitation" aria-label="Wedding invitation details">
-      <button class="close-top" id="backToEnvelope" aria-label="Return to envelope">↶ <span>Close invitation</span></button>
+    <!-- FULL INVITATION -->
+    <section id="invitation" class="invitation hidden">
+      <button id="backButton" class="back-button">
+        ↶ Return to envelope
+      </button>
+
       <article class="paper">
-        <div class="paper-border"></div>
-        <div class="floral floral-top">✦ ❧ ✦</div>
-        <p class="eyebrow ink">WITH FULL HEARTS AND JOY</p>
-        <p class="script-line">Together with our families</p>
-        <h2 class="couple-names">Wency <span>&amp;</span> Clea</h2>
-        <p class="invitation-copy">joyfully invite you to celebrate the beginning of our forever</p>
-        <div class="ornament"><span></span> ❦ <span></span></div>
-        <p class="date-label">THE WEDDING DAY</p>
-        <p class="date-large">April 00, 2027</p>
-        <p class="time-placeholder">TIME TO BE ANNOUNCED</p>
-        <div class="details-grid">
-          <div class="detail">
-            <span class="detail-number">01</span>
-            <h3>CEREMONY</h3>
-            <p>Parish of Christ the King</p>
-            <p class="muted">We’ll meet here to witness our “I do.”</p>
+        <div class="paper-frame"></div>
+
+        <!-- 1. SAVE THE DATE -->
+        <header class="section save-date">
+          <p class="flourish">✦ ❧ ✦</p>
+          <p class="eyebrow ink">KINDLY SAVE THE DATE</p>
+          <p class="script">Together with our families</p>
+
+          <h2 class="couple">Wency <span>&</span> Clea</h2>
+
+          <p class="intro-copy">
+            With joyful hearts, we invite you to witness our vows
+            and celebrate the beginning of our forever.
+          </p>
+
+          <div class="ornament">──────── ❦ ────────</div>
+          <p class="eyebrow ink">THE WEDDING OF</p>
+          <h3 class="date">April 00, 2027</h3>
+          <p class="small-caps">A DAY OF LOVE · A LIFETIME TOGETHER</p>
+        </header>
+
+        <!-- 2. WEDDING DETAILS -->
+        <section class="section">
+          <p class="eyebrow ink">I · THE IMPORTANT DETAILS</p>
+          <h3 class="section-title">Join Us for Our “I Do”</h3>
+
+          <div class="detail-grid">
+            <div class="detail-card">
+              <span class="symbol">✧</span>
+              <h4>THE CEREMONY</h4>
+              <p>Parish of Christ the King</p>
+              <small>Time to be announced</small>
+            </div>
+
+            <div class="detail-card">
+              <span class="symbol">❦</span>
+              <h4>THE RECEPTION</h4>
+              <p>Venue to be announced</p>
+              <small>Location details coming soon</small>
+            </div>
           </div>
-          <div class="detail">
-            <span class="detail-number">02</span>
-            <h3>RECEPTION</h3>
-            <p>Venue to be announced</p>
-            <p class="muted">More details will follow soon.</p>
+
+          <p class="muted-copy">
+            Please stay tuned for the confirmed schedule and reception
+            venue. We cannot wait to share this special day with you.
+          </p>
+        </section>
+
+        <!-- 3. WEDDING TIMELINE -->
+        <section class="section">
+          <p class="eyebrow ink">II · THE CELEBRATION</p>
+          <h3 class="section-title">Wedding Timeline</h3>
+          <p class="muted-copy">
+            Here is a preview of our celebration. The times below
+            will be updated once the final schedule is confirmed.
+          </p>
+
+          <div class="timeline">
+            <div class="timeline-item">
+              <time>TBA</time>
+              <div>
+                <h4>Guest Arrival</h4>
+                <p>Arrive early and settle into your seats.</p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <time>TBA</time>
+              <div>
+                <h4>Wedding Ceremony</h4>
+                <p>Witness the exchange of vows and rings.</p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <time>TBA</time>
+              <div>
+                <h4>Photo Session</h4>
+                <p>Capture beautiful memories with family and friends.</p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <time>TBA</time>
+              <div>
+                <h4>Reception & Dinner</h4>
+                <p>Enjoy a meal, heartfelt messages, and special moments.</p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <time>TBA</time>
+              <div>
+                <h4>The Celebration</h4>
+                <p>Let us celebrate love, laughter, and new beginnings.</p>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="dress-code">
-          <p class="eyebrow ink">ATTIRE &amp; PALETTE</p>
-          <h3>Elegant in Navy &amp; Gray</h3>
-          <p>Formal attire is kindly requested. We invite our guests to dress in the wedding palette or complementary neutrals.</p>
-          <div class="swatches" aria-label="Wedding color palette">
-            <div class="swatch"><span class="color navy"></span><small>Navy</small></div>
-            <div class="swatch"><span class="color blue"></span><small>Dusty Blue</small></div>
-            <div class="swatch"><span class="color silver"></span><small>Silver Gray</small></div>
-            <div class="swatch"><span class="color charcoal"></span><small>Charcoal</small></div>
-            <div class="swatch"><span class="color ivory"></span><small>Soft Ivory</small></div>
+        </section>
+
+        <!-- 4. ATTIRE AND PALETTE -->
+        <section class="section">
+          <p class="eyebrow ink">III · ATTIRE GUIDE</p>
+          <h3 class="section-title">Formal in Navy & Gray</h3>
+          <p class="muted-copy">
+            We would love to see you in formal attire that complements
+            our wedding color motif.
+          </p>
+
+          <div class="swatches">
+            <div><span class="swatch navy"></span><small>Navy Blue</small></div>
+            <div><span class="swatch dusty"></span><small>Dusty Blue</small></div>
+            <div><span class="swatch silver"></span><small>Silver Gray</small></div>
+            <div><span class="swatch charcoal"></span><small>Charcoal</small></div>
           </div>
-          <p class="attire-note">Please avoid wearing white or ivory, reserved for the bride. Gentlemen may wear a suit or formal barong; ladies may wear an elegant gown or formal dress.</p>
-        </div>
-        <div class="rsvp">
-          <p class="eyebrow">KINDLY REPLY</p>
-          <h3>Will you attend our wedding?</h3>
-          <p class="rsvp-note">We hope to celebrate this special day with you.</p>
-          <div class="rsvp-buttons" id="rsvpButtons">
-            <button class="yes-button" id="yesButton">Yes, with pleasure!</button>
-            <button class="no-button" id="noButton">No</button>
+
+          <div class="attire-grid">
+            <div>
+              <h4>GENTLEMEN</h4>
+              <p>
+                Formal suit or barong. Navy or charcoal suits are
+                encouraged, with a coordinating blue or gray tie.
+              </p>
+            </div>
+            <div>
+              <h4>LADIES</h4>
+              <p>
+                Formal gown or elegant dress in navy, dusty blue,
+                silver gray, charcoal, or a coordinating shade.
+              </p>
+            </div>
           </div>
-          <p class="rsvp-feedback" id="rsvpFeedback" aria-live="polite"></p>
-        </div>
-        <div class="footer-note">
-          <div class="ornament"><span></span> ❦ <span></span></div>
-          <p class="script-line">With love,</p>
-          <p class="footer-names">Wency &amp; Clea</p>
-          <p class="small-note">We can’t wait to celebrate with you.</p>
-        </div>
+
+          <p class="muted-copy">
+            Kindly avoid wearing white or ivory so the bride can
+            have her special moment.
+          </p>
+        </section>
+
+        <!-- 5. ENTOURAGE -->
+        <section class="section">
+          <p class="eyebrow ink">IV · OUR BELOVED ENTOURAGE</p>
+          <h3 class="section-title">Standing With Us</h3>
+          <p class="muted-copy">
+            With grateful hearts, we will be surrounded by the
+            people who have supported and guided our journey.
+          </p>
+
+          <div class="entourage-grid">
+            <div>
+              <h4>Parents of the Groom</h4>
+              <p>Name of Parent</p>
+              <p>Name of Parent</p>
+            </div>
+            <div>
+              <h4>Parents of the Bride</h4>
+              <p>Name of Parent</p>
+              <p>Name of Parent</p>
+            </div>
+
+            <div class="wide">
+              <h4>Principal Sponsors</h4>
+              <div class="sponsor-list">
+                <p>Name of Sponsor<br>Name of Sponsor<br>Name of Sponsor<br>Name of Sponsor</p>
+                <p>Name of Sponsor<br>Name of Sponsor<br>Name of Sponsor<br>Name of Sponsor</p>
+              </div>
+            </div>
+
+            <div>
+              <h4>Best Man</h4>
+              <p>Name to be announced</p>
+            </div>
+            <div>
+              <h4>Maid of Honor</h4>
+              <p>Name to be announced</p>
+            </div>
+            <div>
+              <h4>Groomsmen</h4>
+              <p>Names to be announced</p>
+            </div>
+            <div>
+              <h4>Bridesmaids</h4>
+              <p>Names to be announced</p>
+            </div>
+            <div>
+              <h4>Ring Bearer</h4>
+              <p>Name to be announced</p>
+            </div>
+            <div>
+              <h4>Flower Girl</h4>
+              <p>Name to be announced</p>
+            </div>
+          </div>
+
+          <p class="muted-copy">
+            Names shown are placeholders until the entourage is finalized.
+          </p>
+        </section>
+
+        <!-- 6. GIFT NOTE -->
+        <section class="section">
+          <p class="eyebrow ink">V · A NOTE ON GIFTS</p>
+          <h3 class="section-title">Your Presence Is Our Present</h3>
+          <p class="gift-copy">
+            With all that we have, we feel truly blessed. Your presence,
+            love, and prayers are already more than we could ask for.
+            Should you wish to give a gift, a monetary contribution
+            would be sincerely appreciated.
+          </p>
+        </section>
+
+        <!-- 7. RSVP -->
+        <section class="section rsvp-section">
+          <p class="flourish">✦ ❧ ✦</p>
+          <p class="eyebrow ink">KINDLY RESPOND</p>
+          <h3 class="section-title">Will You Celebrate With Us?</h3>
+          <p class="muted-copy">
+            Please let us know whether you can join us on our special day.
+          </p>
+
+          <form id="rsvpForm">
+            <label for="guestName">Your full name</label>
+            <input id="guestName" name="guestName"
+              placeholder="Enter your full name" required>
+
+            <fieldset>
+              <legend>Your response</legend>
+              <label class="radio-option">
+                <input type="radio" name="attendance"
+                  value="Joyfully accepts" required>
+                Joyfully accepts
+              </label>
+              <label class="radio-option">
+                <input type="radio" name="attendance"
+                  value="Regretfully declines">
+                Regretfully declines
+              </label>
+            </fieldset>
+
+            <label for="guestCount">Number of guests, including you</label>
+            <select id="guestCount" name="guestCount">
+              <option value="1">1 guest</option>
+              <option value="2">2 guests</option>
+              <option value="3">3 guests</option>
+              <option value="4">4 guests</option>
+              <option value="5">5 guests</option>
+            </select>
+
+            <button type="submit" class="submit-button">
+              Prepare My RSVP
+            </button>
+          </form>
+
+          <div id="rsvpResult" class="hidden">
+            <p id="rsvpMessage" class="rsvp-message"></p>
+            <a id="emailLink" class="contact-button" href="#">
+              Confirm by Email
+            </a>
+            <a id="smsLink" class="contact-button secondary" href="#">
+              Confirm by Text
+            </a>
+            <p class="fine-print">
+              Your email or messaging app will open with a prepared
+              message. Please review and send it to confirm your RSVP.
+            </p>
+          </div>
+        </section>
+
+        <footer class="paper-footer">
+          <p class="flourish">──────── ❦ ────────</p>
+          <p class="script">With love,</p>
+          <p class="footer-names">Wency & Clea</p>
+          <p class="muted-copy">We cannot wait to celebrate with you.</p>
+          <p class="footer-date">APRIL 00, 2027 · SAVE THE DATE</p>
+        </footer>
       </article>
     </section>
   </main>
-  <footer>MADE WITH LOVE • W &amp; C • 2027</footer>
+
+  <footer class="site-footer">MADE WITH LOVE · W & C · 2027</footer>
   <script src="script.js"></script>
 </body>
 </html>
